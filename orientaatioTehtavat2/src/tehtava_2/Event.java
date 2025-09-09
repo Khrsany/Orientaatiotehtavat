@@ -1,18 +1,18 @@
 public class Event implements Comparable<Event> {
-    private final double time;   // tapahtuman aika
-    private final String type;   // esim. "Arrival", "Exit" (enum vasta tehtävässä 3)
+    private final double time;       // tapahtuma-aika
+    private final EventType type;    // tapahtuman tyyppi (enum)
 
-    public Event(double time, String type) {
+    public Event(double time, EventType type) {
         this.time = time;
         this.type = type;
     }
 
     public double getTime() { return time; }
-    public String getType() { return type; }
+    public EventType getType() { return type; }
 
     @Override
     public int compareTo(Event other) {
-        // Pienempi aika = suurempi prioriteetti (tulee ensin)
+        // pienempi aika = käsitellään ensin
         return Double.compare(this.time, other.time);
     }
 

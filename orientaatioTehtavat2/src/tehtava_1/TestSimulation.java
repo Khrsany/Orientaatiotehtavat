@@ -1,3 +1,5 @@
+package tehtava_1;
+
 public class TestSimulation {
     public static void main(String[] args) {
         EventList list = new EventList();
@@ -10,7 +12,7 @@ public class TestSimulation {
         list.add(new Event(6.0,  "Router Finish"));
         list.add(new Event(10.0, "Later"));
 
-        System.out.println("Alkuperäinen EventList (järjestetty näkymä):");
+        System.out.println("Alkuperäinen tehtava_1.EventList (järjestetty näkymä):");
         list.snapshotSorted().forEach(System.out::println);
 
         // b) poista seuraava (pienimmän ajan tapahtuma)
@@ -18,7 +20,7 @@ public class TestSimulation {
         System.out.println("\nPoistettu seuraava tapahtuma: " + next);
 
         // c) tulosta jäljellä oleva lista aikajärjestyksessä
-        System.out.println("\nJäljellä oleva EventList (järjestetty näkymä):");
+        System.out.println("\nJäljellä oleva tehtava_1.EventList (järjestetty näkymä):");
         list.snapshotSorted().forEach(System.out::println);
 
         System.out.println("\nJäljellä yhteensä: " + list.size());
