@@ -1,4 +1,4 @@
-package tehtava_6;
+package tehtava_6_7;
 
 public class Customer {
     private static int nextId = 1;

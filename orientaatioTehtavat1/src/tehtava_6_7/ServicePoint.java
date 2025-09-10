@@ -1,4 +1,4 @@
-package tehtava_6;
+package tehtava_6_7;
 
 import java.util.LinkedList;
 
